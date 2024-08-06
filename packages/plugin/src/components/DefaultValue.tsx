@@ -33,7 +33,6 @@ export function DefaultValue({ comment, value, type }: DefaultValueProps) {
 
 	return (
 		<span className="tsd-signature-symbol">
-			{' = '}
 
 			{value && <>{typeof value === 'string' ? value : <Type type={value} />}</>}
 

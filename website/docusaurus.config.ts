@@ -136,7 +136,7 @@ function getPluginConfig() {
 		case 'polyrepo-multi':
 			return polyrepoMultiple;
 		default:
-			return local;
+			return monorepo;
 	}
 }
 
@@ -266,7 +266,7 @@ const config: Config = {
 	],
 	plugins: [
 		[
-			'docusaurus-plugin-typedoc-api',
+			'@imnaiyar/typedoc-docusaurus-plugin',
 			{
 				exclude: ['**/themes/*', '**/website/*'],
 				minimal: false,
